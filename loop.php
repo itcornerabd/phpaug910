@@ -3,23 +3,21 @@
 	//for, while, do while
 	
 	// init , condition , increment 
-
-	for($i=1;$i<=10;$i++)
+	echo "for loop";
+	for($i=11;$i<=10;$i++)
 	{
 		echo "<br>". $i;
 	}
-
-	$j=1;
-
+	$j=11;
+	echo "while loop";
 	while($j<=10)
 	{
 		echo "<br>".$j;
 		$j++;
-
 	}
 
-	$k=1;
-
+	$k=11;
+	echo "do while loop";
 	do
 	{
 		echo "<br>".$k;

@@ -1,0 +1,28 @@
+
+body
+{
+	/*background-color: rgb( 255,255 ,255 ); /*name, hexa rgb*/   /*#CCFFFF;*/
+
+	/*background:url('../img/desert.jpg');
+
+	background-repeat: no-repeat; repeat-x repeat-y no-repeat
+	background-attachment: fixed;
+	background-size: 100% 100%;*/*/
+}
+
+
+div	
+{
+	height: 100px;
+	width: 100px;
+	background-color: yellow;
+	float: left;
+	/*padding: 10px;*/
+	/*padding: 5px 10px 15px 20px;*/
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 5px;		
+	border:1px red dashed;
+	margin: 10px;
+}

@@ -1,6 +1,6 @@
 <?php 
 
-	$a=100;
+	$a=10;
 	$b=20;
 	$c=30;
 
@@ -19,7 +19,7 @@
 		else
 			echo "c is greatest";
 	}
-
+	
 	echo "<br>";
 
 	if(($a>$b) && ($a>$c) ) // && || !

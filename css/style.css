@@ -1,0 +1,34 @@
+	div /* element wise  	*/
+		{
+			background-color:yellow; 
+			
+		}	
+		.cls  /* class wise  	*/
+		{
+			color: red;	
+		}
+
+		#p1  /* ID  wise  */
+		{
+			font-size: 20px;
+		}
+		p
+		{
+			font-style: italic;
+		}
+
+		div,p,#span1
+		{
+			font-style: italic;
+		}
+
+		#listdiv ul li
+		{
+			font-size: 10px;
+		}
+
+		* , body , html
+		{
+			
+		}
+
