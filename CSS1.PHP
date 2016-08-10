@@ -6,16 +6,30 @@
 </head>
 <body>
 
-	<div>
-		div 1
+
+<a href="css.php"> Click Here </a>
+
+<hr>
+
+<div>
+
+	<div class="cls" ID="div1">
+		div 1 div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1
+		div 1 div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1
+		div 1 div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1div 1
 	</div>
 	
-	<div>
+	<div  class="cls">
 		div 2
 	</div>
-	<div>
+	<div  class="cls">
 		div 3
 	</div>
+</div>
+
+
+
+
 
 </body>
 </html>

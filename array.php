@@ -23,6 +23,8 @@
 
 	$size = count($fruits);
 
+	//names as name
+	//users as user
 	foreach($fruits as $key => $fruit )
 	{
 		echo $key . " likes " .  $fruit . "<br>";

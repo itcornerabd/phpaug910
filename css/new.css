@@ -11,11 +11,16 @@ body
 }
 
 
-div	
+.cls
 {
-	height: 100px;
-	width: 100px;
-	background-color: yellow;
+	background-color:yellow;
+
+	height: 100px;  /* inch cm  % */
+	/*width: 100px;*/
+	width: 30%;
+	min-width: 200px;
+	max-width: 300px;
+	
 	float: left;
 	/*padding: 10px;*/
 	/*padding: 5px 10px 15px 20px;*/
@@ -24,5 +29,44 @@ div
 	padding-top: 10px;
 	padding-bottom: 5px;		
 	border:1px red dashed;
-	margin: 10px;
+	/*margin: 10px;*/
+
+
+	color: red;
+	font-family: Tahoma;
+	text-decoration: underline;
+	text-transform: capitalize;
+	text-align: justify; 
+	overflow:auto;
+	text-shadow: white 10px 10px;	
+}
+
+a
+{
+	font-size:10px; 
+}
+a:visited
+{
+	background-color: red;
+	font-size: 24px;
+}
+a:active
+{
+	background-color: blue;
+}
+a:hover
+{
+	font-size:16px;
+}
+
+#div1
+{
+	/*
+	transform: skew(10deg,40deg);*/
+	transition: transform 2s;
+}
+
+#div1:hover
+{
+	transform: rotate(180deg);
 }
