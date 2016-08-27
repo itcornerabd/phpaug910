@@ -1,0 +1,46 @@
+tbl_info
+id - readonly  
+name
+contact
+email 
+address
+============================================
+ 
+  insert into tbl_info values(3,'name',12312,'email','address');
+
+
+  insert into tbl_info (name,email,contact,address) values('name','email','contact','address')
+
+==================================================
+
+update tbl_info set name ='updated name'
+ -- update all rows	
+
+update tbl_info set name ='updated name' where id = 5
+-- update 5th row
+
+=====================================================
+
+
+delete from tbl_info 
+--delete all rows
+
+
+delete from tbl_info  where id=4
+== delete 4th row 
+
+truncate table tbl_info 
+-- delete all rows and data related to table
+
+=======================================================
+
+
+select * from tbl_info 
+-- select all rows
+
+select * from tbl_info where id = 5
+
+select email,contact from tbl_info where id=5
+
+
+
