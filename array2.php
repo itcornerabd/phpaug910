@@ -62,7 +62,7 @@ echo "<hr/>";
 	$namearray = explode(" ", $name);
 
 	var_dump($namearray);
-	echo $namearray[0];
+	echo $name  `array[0];
 
 	if(isset($namearray[2]))
 		echo $namearray[2]; 
