@@ -1,4 +1,11 @@
-<?php require 'constr.php' ?>
+<?php
+session_start();
+ require 'constr.php';
+ if(!isset($_SESSION['username']))
+  {
+  	header("location:login.php");
+  }
+   ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +14,9 @@
 </head>
 <body>
 
+<h2>Hello <?=$_SESSION['username'];?> </h2>
 <a href="addmovie.php">add new</a>
+<a href="logout.php">Logout</a>
 
 	<table align="center">
 		<tr>
