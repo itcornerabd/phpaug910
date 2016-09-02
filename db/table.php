@@ -1,10 +1,6 @@
 <?php
-session_start();
  require 'constr.php';
- if(!isset($_SESSION['username']))
-  {
-  	header("location:login.php");
-  }
+ 
    ?>
 <!DOCTYPE html>
 <html>

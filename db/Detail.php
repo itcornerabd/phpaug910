@@ -27,6 +27,9 @@ require 'constr.php';
 		die("404 invalid request");
 	}
 
+// xss cross site scripting 
+
+
 
  ?>
 
@@ -40,7 +43,7 @@ require 'constr.php';
 <body>
 <h1> <?=$name ?> </h1>
 <h2><?=$cast ?></h2>	
-<p> <?=$plot ?> </p>
+<p> <?=htmlentities($plot)?> </p>
 </body>
 </html>
 <?php require 'closestr.php'; ?>

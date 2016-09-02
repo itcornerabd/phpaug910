@@ -1,5 +1,4 @@
 <?php 
-session_start();
 require 'constr.php';
 	if(isset($_POST['username']))
 	{
