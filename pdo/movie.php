@@ -3,10 +3,10 @@
 	class movie
 	{
 		public $id, $name ,$cast,$plot,$categoryid,$Releasedate,$active;
-		function __construct($name)
+		
+		function __construct()
 		{
-			$this->name =$name;
-			$this->active=true;	
+
 		}
 
 		public function save()
@@ -37,15 +37,17 @@
 			// update set active =0
 		}
 
+		public static function fetchall($con)
+		{	
+			return $con->getdata('movie','movie');
+		}
+
 	}	
 
-	// $rustom  =  new movie('Rustom'); 
-	// $rustom->cast = 'Akshy Kumar';
-	// $rustom->plot= 'asdasd';
-	// $rustom->categoryid =1;
-	// $rustom->Releasedate=date('Y-m-d');
-	// var_dump($rustom);
 
-	 
+// 	movie::fetchall();	 
+// // classname::staticfunction 
 
+// 	$movie->save()
+// //	object->function
  ?>
