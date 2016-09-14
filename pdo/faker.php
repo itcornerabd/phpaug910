@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 	require 'movie.php';
 
 	require './vendor/autoload.php';
