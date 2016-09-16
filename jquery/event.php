@@ -78,6 +78,16 @@ table ,tr,td
 <input type="button" class="btn" value="red" id="btnred" >
 <input type="button" class="btn" value="blue" id="btnblue" >
 
+<hr>
+
+<input type="text" id="txt1" class="add">
+
+<input type="text" id="txt2" class="add" >
+
+<input type="text" id="result">
+
+<span id="span1"></span>
+
 </body>
 </html>
 
@@ -85,6 +95,20 @@ table ,tr,td
 <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+
+
+		$(".add").keyup(function(){
+
+			var txt1 =  parseInt($("#txt1").val());
+			var txt2 = parseInt($("#txt2").val());
+
+			var result = txt1+txt2;
+
+			$("#result").val(result);	
+			$("#span1").html("<ul> <li>asd <li>asdasd	 </ul>");
+
+			
+		})	
 
 		$(".btn").click(function(){
 			var cls = $(this).val(); 
