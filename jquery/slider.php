@@ -11,6 +11,15 @@
 </head>
 <body>
 
+<h1>Heading <small>small </small></h1>
+
+	<code>
+	$x=10+a;
+	$a=$b+$c;
+	</code>
+
+
+
 <div style="width:300px;height:200px">
 
 <ul id="slider">

@@ -14,9 +14,7 @@ require 'constr.php';
 
 		$query = "insert into movie (name, cast, plot, categoryid, Releasedate) values ('$name','$cast','$plot',$category,'$releasedate' ) ";
 
-		 
 		$result = mysqli_query($con,$query);
-
 
 		if(!$result)
 		{
