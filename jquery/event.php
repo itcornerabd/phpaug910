@@ -106,7 +106,6 @@ $(document).ready(function(){
 
 			$("#result").val(result);	
 			$("#span1").html("<ul> <li>asd <li>asdasd	 </ul>");
-
 			
 		})	
 
