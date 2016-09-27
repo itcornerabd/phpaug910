@@ -45,7 +45,7 @@
 			<td><?=$rs['cast'] ?></td>
 			<td><?=$rs['Releasedate'] ?></td>
 			<td>
-				<a href="Detail.php?id=<?=$rs['id'] ?>">Details</a>
+				<a href=" Detail.php?id=<?=$rs['id'] ?>">Details</a>
 			</td>
 
 			<td>

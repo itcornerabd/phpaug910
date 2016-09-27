@@ -38,8 +38,12 @@ table ,tr,td
 				<li>
 					<a href="#" id="linkb">B</a>
 				</li>
-				<li>C</li>
-				<li>D</li>
+				<li>
+					<a href="#" id="linkc">C</a>
+				</li>
+				<li>
+					<a href="#" id="linkd">D</a>
+				</li>
 			</ul>
 		</td>
 		<td>
@@ -65,13 +69,54 @@ $("#linka").click(function(event){
 
 $("#linkb").click(function(){
 
-	var gerparam = { 'letter':'B' , 'ID':1 };
+	var gerparam = { 'letter':'B' , 'ID':1};
 
 	$.get('b.php',gerparam,function(response){
 		 console.log(response);
 		 $("#words").html(response);
 		 
 	})
+})
+
+
+$("#linkc").click(function(){
+
+	var gerparam = { 'letter':'C' , 'ID':1};
+
+	$.post('c.php',gerparam,function(response){
+		 console.log(response);
+		 $("#words").html(response);
+		 
+	})
+})
+
+
+
+$("#linkd").click(function(){
+	$.getJSON('d.php',function(jsondata){
+
+
+		var	html = '';
+			
+			html='<ol>';
+			$.each(jsondata , function(key,value){
+			html+='<li>'+value.word+'</li>'// a=a+10  a=10
+			console.log(value.id);	
+			} )
+			
+
+			html+='</ol>'; 
+
+
+		$("#words").html(html);	
+
+
+
+
+	})
+
+
+
 })
 
 </script>
