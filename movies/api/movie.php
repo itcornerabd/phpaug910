@@ -1,7 +1,6 @@
 <?php 
 	require '../include/constr.php';
 
-
 	if(isset($_REQUEST['categoryid']))
 	{
 
