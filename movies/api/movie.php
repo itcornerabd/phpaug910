@@ -1,6 +1,9 @@
 <?php 
 	require '../include/constr.php';
 
+
+	 
+
 	if(isset($_REQUEST['categoryid']))
 	{
 
@@ -16,7 +19,11 @@
 
 		$movies = mysqli_fetch_all($result,MYSQLI_ASSOC);
 		
-		echo json_encode($movies);				
+		$returndata = [
+						"status"=>"success",
+						"data"=>$movies
+				   	  ];
+		echo json_encode($returndata);				
 
 
 

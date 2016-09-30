@@ -26,7 +26,10 @@
 				</div>
 
 			</div>
-			<div class="col-md-8"></div>				
+			<div class="col-md-8" id="movielist">
+
+
+			</div>				
 		</div>
 	</div>
 
@@ -45,7 +48,7 @@ $.getJSON('./api/category.php',function(returnjson){
 			
 			$.each(returnjson.data,function(key,value){
 
-				html+='<button type="button" class="btn btn-default category">'+value.name+'</button>'				 
+			html+='<button type="button" class="btn btn-default category" data-id="'+value.id+'" >'+value.name+'</button>'				 
 			})
 		//console.log(html);
 			$("#categorylist").html(html);
@@ -63,7 +66,33 @@ $.getJSON('./api/category.php',function(returnjson){
 function assignclick()
 {
 	 $(".category").click(function(){
-		console.log('in click event')
+			
+	 	var dataid = $(this).attr('data-id');
+		//console.log('in click event'+dataid)
+
+		var param = {'categoryid':dataid};
+
+		$("#movielist").html('<img src="./images/wait.gif" >');
+		$.getJSON('./api/movie.php',param,function(returnjson){
+
+			var html='';
+				if(returnjson.status=="success")
+				{
+					
+					$.each(returnjson.data,function(key,value){
+							
+						html+=	'<h1>'+value.name+'</h1>'
+						html+=	'<p>'+value.cast+'</p>'
+						// html+=	'<span>29-09-2016</span>'	
+	
+					})
+
+					$("#movielist").html(html);
+				}
+
+		})
+
+
 	})
 }
 
