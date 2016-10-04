@@ -81,7 +81,7 @@ $("#linkb").click(function(){
 
 $("#linkc").click(function(){
 
-	var gerparam = { 'letter':'C' , 'ID':1};
+	var gerparam = { 'letter':$("#txtname").val() , 'cast':$("#txtcast").val()};
 
 	$.post('c.php',gerparam,function(response){
 		 console.log(response);

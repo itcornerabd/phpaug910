@@ -7,16 +7,13 @@
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">	
-	<style type="text/css">
-		body
-		{
-			margin-top: 100px;
-		}	
-	</style>
 
 	<title>Movies</title>
 </head>
 <body>
+
+
+
 
 <center>
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#moviemodal">

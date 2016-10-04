@@ -63,9 +63,27 @@ $("#save").click(function(){
 
 	var param=$("#movieform").serialize();
 
-	$("body").append(param);
+	
 	$.post('./api/savemovie.php',param ,function(data){
+		console.log(data);		
+
+
+		data = $.parseJSON(data);
+
+		$("#moviemodal").modal('hide');	
+		if(data.status=="success")
+		{
+			
+			$("body").prepend('<div class="alert alert-success alert-dismissible" role="alert">  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>New Movie Added</strong></div>')
+	
+		}
+		else
+		{
+			$("body").prepend('<div class="alert alert-success alert-dismissible" role="alert">  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong> Some Error Occured</strong></div>');
+	
+		}
 		
+
 	});
 
 })
